@@ -17,6 +17,5 @@ git checkout -b main
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:<USERNAME>/yafimsva.github.io.git main
-
+git push -f git@github.com:yafimsva/catan-dice.git main:gh-pages
 cd -
