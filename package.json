@@ -1,20 +1,23 @@
 {
   "name": "catan-dice-roller",
   "version": "0.0.0",
+  "homepage": "http://yafimsva.github.io/catan-dice",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy": "gh-pages -d build",
     "preview": "vite preview --port 5050",
-    "publish":"sudo ./deploy.sh",
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
     "ant-design-vue": "^2.2.8",
+    "lodash.shuffle": "^4.2.0",
     "vue": "^3.2.31"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
+    "@types/lodash.shuffle": "^4.2.7",
     "@types/node": "^16.11.25",
     "@vitejs/plugin-vue": "^2.2.2",
     "@vue/eslint-config-prettier": "^7.0.0",
@@ -22,6 +25,7 @@
     "@vue/tsconfig": "^0.1.3",
     "eslint": "^8.5.0",
     "eslint-plugin-vue": "^8.2.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.5.1",
     "typescript": "~4.5.5",
     "vite": "^2.8.4",
